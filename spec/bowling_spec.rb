@@ -21,7 +21,12 @@ describe Bowling do
 
     context "When rolling three spares" do
       let(:pins) { [5]*7 }
-      it { should eql 60 }
+      it { should eql 50 }
+    end
+
+    context "When rolling strike" do
+      let(:pins) { [10,1,1] }
+      it { should eql 14 }
     end
   end
 end
