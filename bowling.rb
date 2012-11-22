@@ -14,7 +14,7 @@ class Bowling
     score = 0
     pins.each_index do |index|
       if roll_at(index) == 10
-        score += roll_at(index+1) + roll_at(index+2) 
+        score += roll_at(index+1) + roll_at(index+2)
       end
     end
     score

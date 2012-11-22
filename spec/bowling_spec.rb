@@ -28,5 +28,10 @@ describe Bowling do
       let(:pins) { [10,1,1] }
       it { should eql 14 }
     end
+
+    context "When rolling strikes and spares" do
+      let(:pins) { [10,5,5,5] }
+      it { should eql 40 }
+    end
   end
 end
